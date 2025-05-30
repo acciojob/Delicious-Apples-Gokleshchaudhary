@@ -4,46 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Varieties</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- CSS file -->
 </head>
 <body>
-    <header>
-        <h1>Apple Varieties</h1>
-    </header>
-    <main>
-    <section class="product__photo">
-        <div class="photo-container">
-            <div class="photo-main">
-                <img src="link_to_main_image.jpg" alt="Main Apple Image">
-            </div>
-            <div class="photo-album">
-                <ul>
-                    <li><img src="link_to_image1.jpg" alt="Apple Image 1"></li>
-                    <li><img src="link_to_image2.jpg" alt="Apple Image 2"></li>
-                    <li><img src="link_to_image3.jpg" alt="Apple Image 3"></li>
-                </ul>
+    <div class="product-card">
+        <div class="product__photo">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="main_image_link.jpg" alt="Main Apple">
+                </div>
+                <div class="photo-album">
+                    <ul>
+                        <li><img src="image1_link.jpg" alt="Apple 1"></li>
+                        <li><img src="image2_link.jpg" alt="Apple 2"></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="price">
-        <p>$7.93</p>
-    </section>
-    <section class="variant">
-        <h2>Varieties</h2>
-        <ul>
-            <li>Green: <a href="link_to_green_image.jpg">Link</a></li>
-            <li>Yellow: <a href="link_to_yellow_image.jpg">Link</a></li>
-            <li>Orange: <a href="link_to_orange_image.jpg">Link</a></li>
-            <li>Red: <a href="link_to_red_image.jpg">Link</a></li>
-        </ul>
-    </section>
-    <section class="description">
-        <h2>BENEFITS</h2>
-        <p>List the benefits of apples here.</p>
-    </section>
-</main>
-    <footer>
+        <div class="price">$7.93</div>
+        <div class="variant">
+            <h3>Varieties</h3>
+            <ul>
+                <li>Green</li>
+                <li>Yellow</li>
+                <li>Orange</li>
+                <li>Red</li>
+            </ul>
+        </div>
+        <div class="description">
+            <h3>BENEFITS</h3>
+            <ul>
+                <li>Nutritious</li>
+                <li>Good for weight loss</li>
+                <li>Good for bone health</li>
+            </ul>
+        </div>
         <button class="add-to-cart">ADD TO CART</button>
-    </footer>
+    </div>
 </body>
 </html>
