@@ -3,244 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Product Showcase</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #00ff9d;
-            padding: 20px;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 400px;
-            width: 100%;
-        }
-
-        .product__photo {
-            position: relative;
-            margin-bottom: 20px;
-        }
-
-        .photo-container {
-            position: relative;
-        }
-
-        .photo-main {
-            background: #9be64c;
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 10px;
-        }
-
-        .photo-main img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .photo-album {
-            margin-top: 10px;
-        }
-
-        .photo-album ul {
-            display: flex;
-            list-style: none;
-            gap: 10px;
-        }
-
-        .photo-album li {
-            width: 55px;
-            height: 55px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            cursor: pointer;
-        }
-
-        .photo-album img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .product__info {
-            padding: 20px 0;
-        }
-
-        .title h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-
-        .subtitle {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-
-        .price {
-            color: #ff4949;
-            font-size: 26px;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        .price span {
-            font-size: 16px;
-        }
-
-        .variant {
-            margin: 20px 0;
-        }
-
-        .variant h3 {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .variant ul {
-            display: flex;
-            list-style: none;
-            gap: 10px;
-        }
-
-        .variant li {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .variant li:hover {
-            transform: scale(1.2);
-        }
-
-        .variant .green { background: #9be64c; }
-        .variant .yellow { background: #ffeb3b; }
-        .variant .orange { background: #ff9800; }
-        .variant .red { background: #f44336; }
-
-        .description {
-            margin: 20px 0;
-        }
-
-        .description h3 {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .description ul {
-            list-style: none;
-            color: #666;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .description li::before {
-            content: '•';
-            color: #9be64c;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        .buy-btn {
-            background: #ff4949;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 25px;
-            font-size: 16px;
-            cursor: pointer;
-            width: 100%;
-            transition: background 0.3s;
-        }
-
-        .buy-btn:hover {
-            background: #ff3333;
-        }
-    </style>
+    <title>Apple Varieties</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <div class="product-card">
-        <div class="product__photo">
-            <div class="photo-container">
-                <div class="photo-main">
-                    <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png" alt="Green Apple">
-                </div>
-                <div class="photo-album">
-                    <ul>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green view 1"></li>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="Yellow view"></li>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="Orange view"></li>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red view"></li>
-                    </ul>
-                </div>
+    <header>
+        <h1>Apple Varieties</h1>
+    </header>
+    <main>
+    <section class="product__photo">
+        <div class="photo-container">
+            <div class="photo-main">
+                <img src="link_to_main_image.jpg" alt="Main Apple Image">
             </div>
-        </div>
-        <div class="product__info">
-            <div class="title">
-                <h1>Delicious Apples</h1>
-                <span class="subtitle">CODE: 45999</span>
-            </div>
-            <div class="price">
-                <span>Rs</span> 7.93
-            </div>
-            <div class="variant">
-                <h3>SELECT A COLOR</h3>
+            <div class="photo-album">
                 <ul>
-                    <li class="green" title="Green"></li>
-                    <li class="yellow" title="Yellow"></li>
-                    <li class="orange" title="Orange"></li>
-                    <li class="red" title="Red"></li>
+                    <li><img src="link_to_image1.jpg" alt="Apple Image 1"></li>
+                    <li><img src="link_to_image2.jpg" alt="Apple Image 2"></li>
+                    <li><img src="link_to_image3.jpg" alt="Apple Image 3"></li>
                 </ul>
             </div>
-            <div class="description">
-                <h3>BENEFITS</h3>
-                <ul>
-                    <li>Apples are nutritious</li>
-                    <li>Apples may be good for weight loss</li>
-                    <li>Apples may be good for bone health</li>
-                    <li>They're linked to a lower risk of diabetes</li>
-                </ul>
-            </div>
-            <button class="buy-btn">ADD TO CART</button>
         </div>
-    </div>
-
-    <script>
-        const colorSelectors = document.querySelectorAll('.variant li');
-        const mainImage = document.querySelector('.photo-main img');
-
-        const images = [
-            'https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png',
-            'https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png',
-            'https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png',
-            'https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png'
-        ];
-
-        colorSelectors.forEach((selector, index) => {
-            selector.addEventListener('click', () => {
-                mainImage.src = images[index];
-            });
-        });
-    </script>
+    </section>
+    <section class="price">
+        <p>$7.93</p>
+    </section>
+    <section class="variant">
+        <h2>Varieties</h2>
+        <ul>
+            <li>Green: <a href="link_to_green_image.jpg">Link</a></li>
+            <li>Yellow: <a href="link_to_yellow_image.jpg">Link</a></li>
+            <li>Orange: <a href="link_to_orange_image.jpg">Link</a></li>
+            <li>Red: <a href="link_to_red_image.jpg">Link</a></li>
+        </ul>
+    </section>
+    <section class="description">
+        <h2>BENEFITS</h2>
+        <p>List the benefits of apples here.</p>
+    </section>
+</main>
+    <footer>
+        <button class="add-to-cart">ADD TO CART</button>
+    </footer>
 </body>
 </html>
